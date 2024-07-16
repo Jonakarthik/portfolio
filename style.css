@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #bdb7e9;
+  --white: #f297df;
+  --text-color: #fff;
+  --bg-color: #080808;
+  --second-bg-color: #151515;
+  --light-color: #f297df;
+}
+
+* {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 10rem;
+}
+::-webkit-scrollbar-track {
+  color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  color: var(--main-color);
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.logo span {
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+
+.header .navbar a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0 1rem;
+}
+
+.header .navbar a#Home {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+section {
+  padding: 5rem 5%;
+}
