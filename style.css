@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
-  --main-color: #bdb7e9;
+  --main-color: #BDB7E9;
   --white: #f297df;
   --text-color: #fff;
   --bg-color: #080808;
   --second-bg-color: #151515;
   --light-color: #f297df;
+  --unq-color: #6a86dbfc;
 }
 
 * {
@@ -143,6 +144,7 @@ color: var(--main-color);
   background-color: var(--main-color);
   color: var(--text-color);
   border: none;
+  margin-right: 1rem;
 }
 .home .content .flex-btn .btn:hover{
   background-color: var(--main-color);
@@ -288,6 +290,8 @@ color: var(--main-color);
   font-size: 5rem;
   color: var(--text-color);
   margin-bottom: 7rem;
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
 }
 
 .education .timeline-items{
@@ -365,5 +369,62 @@ color: var(--main-color);
   color: var(--text-color);
   line-height: 2;
   text-transform: lowercase;
+}
 
+/* Services */
+.services{
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 5rem 5%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.services .heading{
+  color: var(--text-color);
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
+}
+.services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.services .box-container .box{
+  background-color: var(--main-color);
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  border: .2rem solid var(--main-color);
+  transition: .5s ease-in-out;
+ 
+}
+.services .box-container .box:hover{
+  background-color: var(--unq-color);
+  box-shadow: .1rem .5rem 1rem var(--main-color);
+  scale: 1.1;
+}
+.services .box-container .box:hover h3{
+  font-size: 1.7rem;
+  color: var(--text-color);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.services .box-container .box p{
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+  /* line-height: 2; */
+}
+.services .box-container  .box:hover p,
+.services .box-container .box:hover h3{
+  color: var(--bg-color);
 }
