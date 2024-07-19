@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .contact{
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 5rem 5%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .heading{
+  color: var(--text-color);
+  text-align: center;
+  font-size: 5rem;
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
+  margin-bottom: 3rem;
+}
+.contact .heading span{
+  color: orange;
+}
+.contact .form-container{
+  width: 100%;
+}
+.contact .form-container form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+.contact .form-container form .inputs,
+.contact .form-container form .text{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content:center;
+  gap: 1rem;
+  width: 49%;
+}
+.contact .form-container form .inputs .input,
+.contact .form-container form .text textarea{
+  background-color: var(--bg-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  border: .1rem solid black;
+  outline: none;
+  color: black;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.contact .form-container form .text textarea{
+  height: 15rem;
+  resize: none;
+}
+.contact .form-container form .text .btn{
+  margin-top: 2rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.contact .form-container form .text .btn:hover{
+  box-shadow: 0 0 2.5rem var(--main-color),
+              0 0 5rem var(--main-color);
+}
+.contact .form-container form .inputs input:hover{
+    font-size: 3rem;
+    box-shadow: 0 0 2.5rem var(--main-color),
+    0 0 5rem var(--main-color);
+}
+    </style>
+</head>
+<body>
+    <section class="contact" id="Contact">
+        <h2 class="heading">Contact <span>me</span></h2>
+        <div class="form-container">
+          <form action="#" method="get">
+            <div class="inputs">
+              <input type="text" placeholder="full name" class="input">
+              <input type="email" placeholder="your email-ID" class="input">
+              <input type="number" placeholder="Your mobile N.O" class="input">
+              <input type="Text" placeholder="Your designation" class="input">
+            </div>
+            <div class="text">
+              <textarea placeholder="Your Message"></textarea>
+              <a href="#" class="btn">Send Message</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+</body>
+</html>
