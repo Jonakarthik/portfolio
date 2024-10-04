@@ -494,6 +494,78 @@ color: var(--main-color);
 .services .box-container .box:hover h3{
   color: var(--bg-color);
 }
+@media (min-width: 1200px) {
+  .services .box-container {
+    gap: 3rem;
+  }
+  .services .box-container .box {
+    width: 35rem;
+  }
+}
+
+/* Tablets (medium screens) */
+@media (max-width: 991px) {
+  .services {
+    padding: 3rem 2%;
+  }
+  .services .heading {
+    font-size: 3.5rem;
+  }
+  .services .box-container {
+    flex-direction: column;
+  }
+  .services .box-container .box {
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.5rem;
+  }
+  .services .box-container .box h3,
+  .services .box-container .box p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .services {
+    padding: 2rem 2%;
+  }
+  .services .heading {
+    font-size: 3rem;
+  }
+  .services .box-container .box {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+  .services .box-container .box h3 {
+    font-size: 1.4rem;
+  }
+  .services .box-container .box p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Mobile screens */
+@media (max-width: 480px) {
+  .services {
+    padding: 1rem 1%;
+  }
+  .services .heading {
+    font-size: 2.5rem;
+  }
+  .services .box-container .box {
+    width: 100%;
+    padding: 1rem;
+  }
+  .services .box-container .box h3 {
+    font-size: 1.3rem;
+  }
+  .services .box-container .box p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+}
 
 /* skills */
 .container .heading{
@@ -641,6 +713,7 @@ color: var(--main-color);
     }
   }
 }
+
 
 
 /* trainer */
@@ -793,7 +866,65 @@ color: var(--main-color);
   top: 0;
   right: 0;
 }
+/* Mobile screens */
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+    grid-row-gap: 3rem;
+  }
 
+  .trainer .bio {
+    font-size: 1.6rem;
+  }
+
+  .img img {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .content h2 {
+    font-size: 1.6rem;
+  }
+
+  .content p {
+    font-size: 1.6rem;
+  }
+
+  .section-header {
+    font-size: 3rem;
+  }
+}
+
+/* Small Mobile screens */
+@media (max-width: 480px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+
+  .trainer .bio {
+    font-size: 1.4rem;
+  }
+
+  .img img {
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .content h2 {
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .section-header {
+    font-size: 2.5rem;
+  }
+}
+/* 
+contact section */
 .contact{
   min-height: 100vh;
   background-color: var(--bg-color);
@@ -1010,3 +1141,101 @@ margin: 2rem 1rem;
     color: red;
   }
 }
+@media(max-width:990px){
+  html{
+      font-size: 55.5%;
+  }
+  .home{
+      flex-flow: column-reverse;
+      padding: 8rem 0;
+      padding-top: 15rem;
+  }
+}
+
+
+@media(max-width:700px){
+  html{
+      font-size: 50.5%;
+  }
+  .home img{
+      height: 35rem;
+      width: 35rem;
+  }
+  .home{
+      padding: 8rem 0;
+  }
+  section{
+      padding: 1rem;
+  }
+  .header{
+      position: relative;
+      padding: 0;
+  }
+  .header .logo,
+  .header .menu{
+      padding: 1rem;
+  }
+  .menu i{
+      display: flex;
+  }
+  .header .navbar.active{
+      display: grid;
+  }
+  .header .navbar{
+      position: absolute;
+      top: 7rem;
+      display: none;
+      text-align: center;
+      justify-content: center;
+      background-color: var(--main-color);
+      width: 100%;
+      gap: 2rem;
+      padding: 1rem;
+  }
+  .header .navbar a#Home{
+      color: var(--text-color);
+      text-decoration: none;
+  }
+  .header .navbar a{
+      width: 100%;
+      padding: 1rem;
+  }
+  .header .navbar a:hover,
+  .header .navbar a#Home:hover
+  {
+      background-color: var(--white);
+      color: var(--main-color);
+      text-decoration: none;
+
+      
+  }
+}
+@media(max-width:450px){
+  
+  .home .content p{
+      width: 35rem;
+  }
+  .education .timeline-items{
+      display: grid;
+
+  }
+  .contact .form-container form{
+      display: grid;
+     
+  }
+  .contact .form-container form .inputs,
+  .contact .form-container form .text{
+  width: 100%;
+}
+.contact .form-container form .inputs .input,
+.contact .form-container form .text textarea{
+ 
+  width: 100%;
+}
+.contact{
+  padding: 1rem 0;
+}
+
+
+}
+
